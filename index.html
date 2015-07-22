@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script src="index.js"></script>
+
+	<script id="user-template" type="text/x-handlebars-template">
+		<ul>
+			<li data-id="{{id}}">{{name}} <button id='btn'>View Permission</button></li> <br>
+		</ul>
+	</script>
+
+	<script id="permission-template" type="text/x-handlebars-template">
+		<ul>
+			<li data-id="{{id}}">{{name}}</li>
+			<li data-id="{{id}}">{{id}}</li>
+			<li data-id="{{id}}">{{permissions}} </li>
+		</ul>
+	</script>
+
+</head>
+<body>
+	<main>
+		
+		<button class="get-users">Get Users</button>
+
+
+	</main>
+	
+</body>
+</html>
